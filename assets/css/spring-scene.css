@@ -83,27 +83,20 @@
 .wave-hair-mass {
   transform-box: fill-box;
   transform-origin: center;
-  animation: hair-breeze 3.8s ease-in-out infinite;
-}
-.wave-hair-back {
-  fill: #5a3f32;
-  stroke: #3b2b25;
-  stroke-width: 5;
-  stroke-linejoin: round;
 }
 .wave-lock {
   fill: #6a493a;
   stroke: #3b2b25;
   stroke-width: 4;
 }
-.wave-fringe {
+.woman-face {
+  fill: #f1c6a5;
+}
+.woman-hairline {
   fill: none;
   stroke: #5a3f32;
   stroke-width: 9;
   stroke-linecap: round;
-}
-.woman-face {
-  fill: #f1c6a5;
 }
 
 .wall-woman-body {
@@ -112,8 +105,7 @@
   stroke-width: 5;
 }
 .wall-woman-limb,
-.spring-yuqian-limb,
-.spring-yuqian-body {
+.spring-yuqian-limb {
   fill: none;
   stroke: #303b43;
   stroke-width: 9;
@@ -181,11 +173,6 @@
   100% { transform: translate(-12px, 480px) rotate(250deg); opacity: 0; }
 }
 
-@keyframes hair-breeze {
-  0%, 100% { transform: rotate(0deg) translateX(0); }
-  50% { transform: rotate(1.4deg) translateX(2px); }
-}
-
 @keyframes smoke-rise {
   0% { transform: translate(0, 0); opacity: 0; }
   20% { opacity: .8; }
@@ -209,7 +196,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .spring-petal,
-  .wave-hair-mass,
   .cigarette-smoke,
   .spring-yuqian-figure,
   .love-heart,
