@@ -3,35 +3,6 @@
   border-color: #b9d2bf;
 }
 
-.scene-switcher {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 18px;
-}
-.scene-switcher a,
-.scene-switcher span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 36px;
-  padding: 7px 12px;
-  border: 1px solid var(--line);
-  background: #fff;
-  color: var(--muted);
-  font-size: 13px;
-  text-decoration: none;
-}
-.scene-switcher a:hover,
-.scene-switcher a:focus-visible {
-  color: var(--blue);
-  border-color: #9ab4cc;
-}
-.scene-switcher span[aria-current="page"] {
-  color: #fff;
-  background: #567b4f;
-  border-color: #567b4f;
-}
-
 .spring-hills {
   fill: #a8cf9a;
 }
@@ -109,20 +80,30 @@
   stroke-linecap: round;
 }
 
-.wave-hair {
-  fill: #5a3f32;
-  stroke: #3b2b25;
-  stroke-width: 5;
-  stroke-linejoin: round;
+.wave-hair-mass {
   transform-box: fill-box;
   transform-origin: center;
   animation: hair-breeze 3.8s ease-in-out infinite;
 }
-.wave-curl {
+.wave-hair-back {
+  fill: #5a3f32;
+  stroke: #3b2b25;
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+.wave-lock {
+  fill: #6a493a;
+  stroke: #3b2b25;
+  stroke-width: 4;
+}
+.wave-fringe {
   fill: none;
   stroke: #5a3f32;
-  stroke-width: 12;
+  stroke-width: 9;
   stroke-linecap: round;
+}
+.woman-face {
+  fill: #f1c6a5;
 }
 
 .wall-woman-body {
@@ -202,7 +183,7 @@
 
 @keyframes hair-breeze {
   0%, 100% { transform: rotate(0deg) translateX(0); }
-  50% { transform: rotate(1.8deg) translateX(2px); }
+  50% { transform: rotate(1.4deg) translateX(2px); }
 }
 
 @keyframes smoke-rise {
@@ -228,7 +209,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .spring-petal,
-  .wave-hair,
+  .wave-hair-mass,
   .cigarette-smoke,
   .spring-yuqian-figure,
   .love-heart,
