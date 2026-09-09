@@ -7,8 +7,8 @@
   <title>春日墙头｜相声宇宙门户</title>
   <link rel="stylesheet" href="../../assets/css/portal.css">
   <link rel="stylesheet" href="../../assets/css/v01.css">
-  <link rel="stylesheet" href="../../assets/css/scenes.css">
-  <link rel="stylesheet" href="../../assets/css/spring-scene.css?v=20260909-1">
+  <link rel="stylesheet" href="../../assets/css/scenes.css?v=20260909-3">
+  <link rel="stylesheet" href="../../assets/css/spring-scene.css?v=20260909-2">
   <script src="../../assets/js/portal.js" defer></script>
   <script src="../../assets/js/scenes.js?v=20260909-2" defer></script>
 </head>
@@ -48,7 +48,7 @@
       <div class="scene-stage spring-scene-stage" data-scene-stage>
         <svg class="scene-svg" viewBox="0 0 1000 560" role="img" aria-labelledby="scene-title scene-desc">
           <title id="scene-title">春日墙头场景</title>
-          <desc id="scene-desc">春意盎然。一名女子坐在墙头，拿着酒瓶，叼着烟，头上是一头大波浪；墙下的于谦老师与她对视，两人一见钟情。</desc>
+          <desc id="scene-desc">春意盎然。一名女子正面坐在墙头，大卷发围绕圆脸，一手拿着酒瓶，嘴里叼着烟；墙下的于谦老师与她对视，两人一见钟情。</desc>
 
           <defs>
             <linearGradient id="springSky" x1="0" y1="0" x2="0" y2="1">
@@ -108,17 +108,29 @@
              tabindex="0"
              role="button"
              aria-label="墙头女子。坐在墙头，一手拿着酒瓶，嘴里叼着烟，头上是一头大波浪。">
-            <rect class="hit-area" x="555" y="105" width="270" height="300" rx="70"/>
-            <rect class="focus-ring" x="570" y="118" width="240" height="270" rx="64"/>
+            <rect class="hit-area" x="555" y="92" width="270" height="315" rx="70"/>
+            <rect class="focus-ring" x="570" y="105" width="240" height="286" rx="64"/>
 
             <g class="wall-woman-figure">
-              <circle class="spring-person-head" cx="685" cy="184" r="38"/>
-              <path class="wave-hair" d="M648 185 Q645 145 680 137 Q721 130 732 166 Q741 195 716 214 Q692 229 660 211 Q646 202 648 185 Z"/>
-              <path class="wave-curl" d="M650 160 Q628 170 646 190 Q626 207 650 221"/>
-              <path class="wave-curl" d="M718 151 Q742 165 726 187 Q746 204 722 220"/>
-              <circle class="spring-eye" cx="671" cy="184" r="3"/>
-              <circle class="spring-eye" cx="697" cy="184" r="3"/>
-              <path class="spring-smile" d="M672 201 Q684 208 697 201"/>
+              <g class="wave-hair-mass" aria-hidden="true">
+                <path class="wave-hair-back" d="M640 184 Q636 135 684 123 Q735 126 738 184 Q741 232 708 244 L660 244 Q632 224 640 184 Z"/>
+                <circle class="wave-lock" cx="648" cy="151" r="20"/>
+                <circle class="wave-lock" cx="671" cy="132" r="21"/>
+                <circle class="wave-lock" cx="697" cy="130" r="21"/>
+                <circle class="wave-lock" cx="722" cy="145" r="21"/>
+                <circle class="wave-lock" cx="638" cy="176" r="21"/>
+                <circle class="wave-lock" cx="733" cy="174" r="21"/>
+                <circle class="wave-lock" cx="642" cy="204" r="20"/>
+                <circle class="wave-lock" cx="728" cy="205" r="20"/>
+                <circle class="wave-lock" cx="654" cy="225" r="19"/>
+                <circle class="wave-lock" cx="714" cy="226" r="19"/>
+              </g>
+
+              <circle class="spring-person-head woman-face" cx="685" cy="184" r="38"/>
+              <path class="wave-fringe" d="M655 162 Q668 143 683 153 Q697 140 716 162"/>
+              <circle class="spring-eye" cx="672" cy="184" r="3"/>
+              <circle class="spring-eye" cx="698" cy="184" r="3"/>
+              <path class="spring-smile" d="M672 201 Q685 208 698 201"/>
 
               <path class="wall-woman-body" d="M650 228 Q685 210 720 228 L733 302 L637 302 Z"/>
               <path class="wall-woman-limb" d="M650 242 Q617 248 605 273"/>
