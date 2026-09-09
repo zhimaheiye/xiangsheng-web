@@ -84,17 +84,20 @@
   opacity: 0;
   transition: opacity 140ms ease;
 }
-.person-target {
+.scene-target {
   outline: none;
 }
-.person-target:hover .focus-ring,
-.person-target:focus .focus-ring,
-.person-target.is-active .focus-ring {
+.scene-target:hover .focus-ring,
+.scene-target:focus .focus-ring,
+.scene-target.is-active .focus-ring {
   opacity: 1;
 }
-.person-target:hover .yuqian-figure,
-.person-target:focus .yuqian-figure,
-.person-target.is-active .yuqian-figure {
+.scene-target:hover .yuqian-figure,
+.scene-target:focus .yuqian-figure,
+.scene-target.is-active .yuqian-figure,
+.scene-target:hover .coat-person-figure,
+.scene-target:focus .coat-person-figure,
+.scene-target.is-active .coat-person-figure {
   filter: drop-shadow(0 8px 8px rgba(17, 43, 74, .2));
 }
 
@@ -146,6 +149,67 @@
   opacity: .72;
   animation: breath-drift 2.2s ease-out infinite;
 }
+
+.coat-person-figure {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+.coat-head {
+  fill: #e9bd98;
+}
+.watching-head {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: look-around 5.2s ease-in-out infinite;
+}
+.neutral-mouth {
+  fill: none;
+  stroke: #283746;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.coat {
+  fill: #485346;
+  stroke: #273229;
+  stroke-width: 6;
+  stroke-linejoin: round;
+}
+.coat-collar,
+.coat-seam,
+.coat-arm,
+.coat-leg {
+  fill: none;
+  stroke: #273229;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.coat-collar {
+  stroke-width: 5;
+}
+.coat-seam {
+  stroke-width: 4;
+  opacity: .7;
+}
+.tape-tuck {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: tuck-tape 4.6s ease-in-out infinite;
+}
+.tape {
+  fill: #26292d;
+  stroke: #111315;
+  stroke-width: 3;
+}
+.tape-reel {
+  fill: #d8d8cf;
+  stroke: #666b70;
+  stroke-width: 2;
+}
+.tape-window {
+  fill: #8d9499;
+}
+
 .street-caption {
   fill: rgba(255,255,255,.86);
   font-family: SimSun, serif;
@@ -226,6 +290,9 @@
   margin: 0;
   line-height: 1.8;
 }
+.scene-note p + p {
+  margin-top: 5px;
+}
 
 @keyframes snow-fall {
   from { transform: translateY(-80px) translateX(0); }
@@ -243,6 +310,19 @@
   0% { transform: translate(0, 0) scale(.82); opacity: 0; }
   25% { opacity: .72; }
   100% { transform: translate(36px, -18px) scale(1.18); opacity: 0; }
+}
+
+@keyframes look-around {
+  0%, 28%, 100% { transform: rotate(0deg) translateX(0); }
+  34%, 45% { transform: rotate(-5deg) translateX(-2px); }
+  52%, 72% { transform: rotate(0deg) translateX(0); }
+  78%, 89% { transform: rotate(5deg) translateX(2px); }
+}
+
+@keyframes tuck-tape {
+  0%, 58%, 100% { transform: translateY(0) scale(1); }
+  68%, 78% { transform: translateY(8px) scale(.97); }
+  88% { transform: translateY(1px) scale(1); }
 }
 
 @media (max-width: 820px) {
@@ -270,7 +350,9 @@
 @media (prefers-reduced-motion: reduce) {
   .snow .flake,
   .yuqian-figure,
-  .breath {
+  .breath,
+  .watching-head,
+  .tape-tuck {
     animation: none;
   }
 }
