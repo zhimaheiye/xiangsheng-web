@@ -35,14 +35,14 @@
     <section class="scene-intro">
       <p class="eyebrow">SCENE 001</p>
       <h1>冬日街头</h1>
-      <p>将鼠标移到画面中的人物上，或使用 Tab 键聚焦人物。</p>
+      <p>将鼠标移到画面中的人物上，或使用 Tab 键依次聚焦人物。</p>
     </section>
 
     <section class="scene-layout" aria-label="动态场景与文字说明">
       <div class="scene-stage" data-scene-stage>
         <svg class="scene-svg" viewBox="0 0 1000 560" role="img" aria-labelledby="scene-title scene-desc">
           <title id="scene-title">冬日街头场景</title>
-          <desc id="scene-desc">于谦老师大冬天光着膀子，抱着个白菜，站在街上。画面以简易火柴人和 SVG 动画表现。</desc>
+          <desc id="scene-desc">于谦老师大冬天光着膀子，抱着个白菜站在街上；旁边一名人员穿着军大衣，怀中携带一盘带子。画面以简易 SVG 动画表现。</desc>
 
           <defs>
             <linearGradient id="winterSky" x1="0" y1="0" x2="0" y2="1">
@@ -91,9 +91,16 @@
             <circle class="flake f10" cx="930" cy="50" r="4"/>
           </g>
 
-          <g class="person-target" data-scene-person tabindex="0" role="button" aria-label="于谦老师。大冬天光着膀子，抱着个白菜，站在街上。">
-            <rect class="hit-area" x="400" y="170" width="220" height="330" rx="70"/>
-            <rect class="focus-ring" x="410" y="180" width="200" height="305" rx="64"/>
+          <g class="scene-target person-target"
+             data-scene-target
+             data-title="于谦老师"
+             data-text="大冬天，光着膀子，抱着个白菜，站在街上。"
+             data-status="已聚焦：人物"
+             tabindex="0"
+             role="button"
+             aria-label="于谦老师。大冬天光着膀子，抱着个白菜，站在街上。">
+            <rect class="hit-area" x="380" y="165" width="245" height="335" rx="70"/>
+            <rect class="focus-ring" x="392" y="177" width="220" height="310" rx="64"/>
 
             <g class="yuqian-figure">
               <circle class="head" cx="505" cy="230" r="38"/>
@@ -125,6 +132,44 @@
             </g>
           </g>
 
+          <g class="scene-target person-target"
+             data-scene-target
+             data-title="街边人员"
+             data-text="身穿军大衣。怀中携带一盘带子。"
+             data-status="已聚焦：人物"
+             tabindex="0"
+             role="button"
+             aria-label="街边人员。身穿军大衣，怀中携带一盘带子。">
+            <rect class="hit-area" x="630" y="150" width="235" height="355" rx="70"/>
+            <rect class="focus-ring" x="642" y="162" width="210" height="330" rx="64"/>
+
+            <g class="coat-person-figure">
+              <g class="watching-head">
+                <circle class="head coat-head" cx="748" cy="224" r="36"/>
+                <path class="hair" d="M719 211 Q747 183 778 210"/>
+                <circle class="eye" cx="736" cy="224" r="3"/>
+                <circle class="eye" cx="760" cy="224" r="3"/>
+                <path class="mouth neutral-mouth" d="M738 242 L758 242"/>
+              </g>
+
+              <path class="coat" d="M692 280 Q748 250 804 280 L830 425 Q788 455 748 455 Q706 455 666 425 Z"/>
+              <path class="coat-collar" d="M712 278 L748 320 L784 278"/>
+              <line class="coat-seam" x1="748" y1="318" x2="748" y2="445"/>
+              <line class="coat-leg" x1="720" y1="447" x2="704" y2="486"/>
+              <line class="coat-leg" x1="776" y1="447" x2="792" y2="486"/>
+
+              <g class="tape-tuck" aria-hidden="true">
+                <rect class="tape" x="720" y="326" width="56" height="42" rx="4"/>
+                <circle class="tape-reel" cx="736" cy="347" r="9"/>
+                <circle class="tape-reel" cx="760" cy="347" r="9"/>
+                <rect class="tape-window" x="742" y="341" width="12" height="12" rx="2"/>
+              </g>
+
+              <path class="coat-arm" d="M698 302 Q676 336 690 370 Q710 357 724 345"/>
+              <path class="coat-arm" d="M798 302 Q820 334 806 369 Q786 357 772 345"/>
+            </g>
+          </g>
+
           <text class="street-caption" x="35" y="520">冬日 · 街头</text>
         </svg>
         <div class="stage-hint" aria-hidden="true"><span>↖</span> 聚焦人物查看说明</div>
@@ -141,6 +186,7 @@
     <section class="scene-note">
       <h2>场景记录</h2>
       <p>于谦老师，大冬天光着膀子，抱着个白菜，站在街上。</p>
+      <p>其旁边有一名街边人员，身穿军大衣，怀中携带一盘带子。</p>
     </section>
   </main>
 
