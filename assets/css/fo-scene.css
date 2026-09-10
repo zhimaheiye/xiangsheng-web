@@ -1,0 +1,165 @@
+.fo-scene-stage {
+  background: #f1eadc;
+  border-color: #c9b99e;
+}
+
+.fo-backdrop {
+  fill: #efe4d2;
+}
+.fo-floor {
+  fill: #d8c8ae;
+}
+.fo-grid {
+  stroke: rgba(100, 80, 55, .13);
+  stroke-width: 2;
+}
+.fo-hook,
+.fo-rail {
+  fill: none;
+  stroke: #5b5145;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.fo-figure-head {
+  fill: #efc5a0;
+  stroke: #303840;
+  stroke-width: 6;
+}
+.fo-figure-hair,
+.fo-figure-mouth,
+.fo-figure-arm {
+  fill: none;
+  stroke: #303840;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fo-figure-hair { stroke-width: 9; }
+.fo-figure-mouth { stroke-width: 4; }
+.fo-figure-arm { stroke-width: 9; }
+.fo-eye { fill: #303840; }
+.fo-coat {
+  fill: #556677;
+  stroke: #344453;
+  stroke-width: 6;
+}
+.fo-trouser {
+  fill: #67717b;
+  stroke: #39434c;
+  stroke-width: 6;
+}
+
+.fo-meat-pig {
+  fill: #d98e8e;
+  stroke: #8f5555;
+  stroke-width: 6;
+}
+.fo-meat-line {
+  fill: none;
+  stroke: #f0b1ad;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.fo-meat-cut {
+  fill: #a85f55;
+  stroke: #6c3b35;
+  stroke-width: 5;
+}
+.fo-meat-cut.alt {
+  fill: #8d5148;
+}
+
+.fo-noodles {
+  fill: none;
+  stroke: #d9bd77;
+  stroke-width: 7;
+  stroke-linecap: round;
+  animation: fo-sway 3.4s ease-in-out infinite;
+}
+.fo-scarf {
+  fill: none;
+  stroke: #9f2f35;
+  stroke-width: 18;
+  stroke-linecap: round;
+}
+.fo-scarf-tail {
+  fill: #9f2f35;
+  stroke: #6d1f24;
+  stroke-width: 4;
+}
+
+.fo-intestine {
+  fill: none;
+  stroke: #a95f50;
+  stroke-width: 27;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fo-lard-core {
+  fill: none;
+  stroke: #f2e6bf;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-dasharray: 10 11;
+}
+
+.fo-rice-window {
+  fill: rgba(238, 244, 246, .68);
+  stroke: rgba(55, 65, 74, .45);
+  stroke-width: 3;
+}
+.fo-rice-grain {
+  fill: #fffdf2;
+  stroke: #c6bfa6;
+  stroke-width: 1.5;
+}
+.fo-cuff {
+  stroke: #4c2525;
+  stroke-width: 9;
+  stroke-linecap: round;
+}
+
+.fo-target {
+  outline: none;
+}
+.fo-target .focus-ring {
+  stroke-width: 4;
+}
+.fo-target:hover .fo-visual,
+.fo-target:focus .fo-visual,
+.fo-target.is-active .fo-visual {
+  filter: drop-shadow(0 7px 7px rgba(64, 42, 29, .22));
+}
+
+.fo-hanging {
+  transform-box: fill-box;
+  transform-origin: center top;
+  animation: fo-hang 4.8s ease-in-out infinite;
+}
+.fo-hanging.alt {
+  animation-delay: -1.4s;
+}
+
+.fo-caption {
+  fill: rgba(76, 58, 42, .78);
+  font-family: SimSun, serif;
+  font-size: 19px;
+  letter-spacing: .14em;
+}
+
+@keyframes fo-hang {
+  0%, 100% { transform: rotate(-.8deg); }
+  50% { transform: rotate(.8deg); }
+}
+
+@keyframes fo-sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fo-hanging,
+  .fo-noodles {
+    animation: none;
+  }
+}
