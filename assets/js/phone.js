@@ -1,5 +1,5 @@
-const CORRECT_PIN = '315';
-const MAX_PIN_LENGTH = 3;
+const CORRECT_PIN = '315315';
+const MAX_PIN_LENGTH = 6;
 
 const lockScreen = document.querySelector('[data-lock-screen]');
 const homeScreen = document.querySelector('[data-home-screen]');
