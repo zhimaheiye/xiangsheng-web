@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="拾获设备">
+  <title>拾获设备</title>
+  <link rel="stylesheet" href="../assets/css/lost-phone.css?v=20260911-1">
+  <script src="../assets/js/lost-phone.js?v=20260911-1" defer></script>
+</head>
+<body>
+  <a class="back-link" href="../index.html" aria-label="返回门户">←</a>
+
+  <main class="device-stage" aria-label="拾获设备">
+    <section class="phone" data-phone>
+      <div class="phone-speaker" aria-hidden="true"></div>
+      <div class="screen lock-screen" data-lock-screen>
+        <div class="status-bar" aria-hidden="true">
+          <span data-status-time>12:42</span>
+          <span>●●● ▰</span>
+        </div>
+
+        <div class="lock-header">
+          <div class="lock-icon" aria-hidden="true">⌑</div>
+          <div class="lock-time" data-lock-time>12:42</div>
+          <div class="lock-date" data-lock-date>9月11日 星期五</div>
+        </div>
+
+        <div class="unlock-panel" data-unlock-panel>
+          <p class="device-label">此设备已锁定</p>
+          <h1>输入密码</h1>
+
+          <div class="passcode-dots" aria-label="已输入密码位数" data-passcode-dots>
+            <span></span><span></span><span></span>
+          </div>
+
+          <p class="error-text" data-error-text aria-live="polite"></p>
+
+          <div class="hint-stack" data-hint-stack aria-live="polite"></div>
+
+          <div class="keypad" aria-label="数字键盘">
+            <button type="button" data-key="1">1</button>
+            <button type="button" data-key="2">2<span>ABC</span></button>
+            <button type="button" data-key="3">3<span>DEF</span></button>
+            <button type="button" data-key="4">4<span>GHI</span></button>
+            <button type="button" data-key="5">5<span>JKL</span></button>
+            <button type="button" data-key="6">6<span>MNO</span></button>
+            <button type="button" data-key="7">7<span>PQRS</span></button>
+            <button type="button" data-key="8">8<span>TUV</span></button>
+            <button type="button" data-key="9">9<span>WXYZ</span></button>
+            <span class="keypad-spacer" aria-hidden="true"></span>
+            <button type="button" data-key="0">0</button>
+            <button class="delete-key" type="button" data-delete aria-label="删除一位">⌫</button>
+          </div>
+        </div>
+
+        <div class="home-screen" data-home-screen hidden>
+          <div class="home-top">
+            <span data-home-time>12:42</span>
+            <span>●●● ▰</span>
+          </div>
+          <div class="home-placeholder">
+            <span class="home-mark">✓</span>
+            <strong>已解锁</strong>
+            <small>设备内容尚未接入</small>
+          </div>
+          <div class="home-dock" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="phone-home-indicator" aria-hidden="true"></div>
+    </section>
+
+    <p class="found-note">拾获设备 · 暂无人认领</p>
+  </main>
+</body>
+</html>
