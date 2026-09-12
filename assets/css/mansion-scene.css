@@ -1,0 +1,116 @@
+.mansion-scene-stage {
+  background: #eef1e8;
+  border-color: #b7bcae;
+}
+
+.mansion-bg {
+  fill: #eef1e8;
+}
+
+.mansion-grid {
+  stroke: rgba(65, 76, 63, .08);
+  stroke-width: 2;
+}
+
+.yard-visual {
+  fill: rgba(255, 255, 255, .2);
+  stroke: #4b5748;
+  stroke-width: 10;
+  stroke-linejoin: round;
+}
+
+.yard-corner-marks {
+  fill: none;
+  stroke: #74806f;
+  stroke-width: 4;
+  stroke-linecap: square;
+}
+
+.distance-visual {
+  fill: #6e796b;
+  stroke: #6e796b;
+  stroke-width: 3;
+  opacity: .65;
+}
+
+.house-visual rect:first-child {
+  fill: #ddd0b8;
+  stroke: #6d5b46;
+  stroke-width: 5;
+}
+
+.house-visual > path {
+  fill: #9b6f56;
+  stroke: #6d4b39;
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+
+.house-door {
+  fill: #7f6750;
+  stroke: #5f4a38;
+  stroke-width: 3;
+}
+
+.house-window {
+  fill: #b9d4df;
+  stroke: #647983;
+  stroke-width: 2.5;
+}
+
+.servant-dots {
+  fill: #293741;
+}
+
+.mansion-target {
+  outline: none;
+}
+
+.mansion-target:hover .yard-visual,
+.mansion-target:focus .yard-visual,
+.mansion-target.is-active .yard-visual {
+  stroke: #b4232b;
+}
+
+.mansion-target:hover .house-visual,
+.mansion-target:focus .house-visual,
+.mansion-target.is-active .house-visual,
+.mansion-target:hover .servant-dots,
+.mansion-target:focus .servant-dots,
+.mansion-target.is-active .servant-dots {
+  filter: drop-shadow(0 5px 7px rgba(28, 43, 34, .22));
+}
+
+.servants-target:hover .servant-dots,
+.servants-target:focus .servant-dots,
+.servants-target.is-active .servant-dots {
+  fill: #b4232b;
+}
+
+.yard-hit,
+.house-hit,
+.servants-hit {
+  cursor: pointer;
+}
+
+.yard-focus {
+  stroke-width: 6;
+}
+
+.house-focus,
+.servants-focus {
+  stroke-width: 4;
+}
+
+.mansion-caption {
+  fill: rgba(58, 70, 56, .86);
+  font-family: SimSun, serif;
+  font-size: 20px;
+  letter-spacing: .14em;
+}
+
+@media (max-width: 820px) {
+  .mansion-caption {
+    font-size: 18px;
+  }
+}
