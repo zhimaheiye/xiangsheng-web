@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="相声宇宙公共日历">
+  <title>公共日历｜相声宇宙门户</title>
+  <link rel="stylesheet" href="../assets/css/portal.css">
+  <link rel="stylesheet" href="../assets/css/v01.css">
+  <link rel="stylesheet" href="../assets/css/calendar.css?v=20260918-1">
+  <script src="../assets/js/portal.js" defer></script>
+  <script src="../assets/js/calendar.js?v=20260918-1" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar"><div class="shell utility-inner"><span>相声宇宙公共信息门户</span><span>公共日期事项</span></div></div>
+    <div class="shell masthead">
+      <a class="brand" href="../index.html" aria-label="相声宇宙门户首页"><span class="brand-mark" aria-hidden="true">相</span><span><strong>相声宇宙</strong><small>PUBLIC INFORMATION PORTAL</small></span></a>
+      <div class="masthead-note">公共日历</div>
+    </div>
+    <nav class="primary-nav" aria-label="主导航"><div class="shell nav-inner">
+      <a href="../index.html">首页</a>
+      <a href="../life/index.html">生活</a>
+      <a href="../map/index.html">地图</a>
+      <a href="../radio/index.html">广播</a>
+      <a href="../people/yu-father-in-law/index.html">人物</a>
+      <a href="../scenes/index.html">场景</a>
+      <a class="archive-link" href="../archive/index.html">典故档案</a>
+    </div></nav>
+  </header>
+
+  <main class="shell subpage-main calendar-page">
+    <p class="breadcrumb"><a href="../index.html">首页</a> / 公共日历</p>
+
+    <div class="scene-heading calendar-heading">
+      <div>
+        <p class="eyebrow">PUBLIC CALENDAR</p>
+        <h1>公共日历</h1>
+      </div>
+      <p>已登记日期事项</p>
+    </div>
+
+    <div class="calendar-layout">
+      <section class="calendar-card" aria-labelledby="calendar-title">
+        <div class="calendar-toolbar">
+          <div>
+            <span class="calendar-kicker">月历</span>
+            <h2 id="calendar-title" data-calendar-title>载入中</h2>
+          </div>
+          <div class="calendar-actions" aria-label="月份切换">
+            <button type="button" data-month-action="prev" aria-label="上个月">‹</button>
+            <button type="button" class="today-button" data-month-action="today">回到本月</button>
+            <button type="button" data-month-action="next" aria-label="下个月">›</button>
+          </div>
+        </div>
+
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+        </div>
+        <div class="calendar-grid" data-calendar-grid aria-label="月历"></div>
+      </section>
+
+      <aside class="calendar-side">
+        <section class="registry-panel" aria-labelledby="registry-title">
+          <span class="calendar-kicker">REGISTERED DATES</span>
+          <h2 id="registry-title">已登记日期</h2>
+          <div class="registry-list">
+            <button type="button" class="registry-item" data-jump-month="3" data-jump-day="15">
+              <span class="registry-date">03-15</span>
+              <span class="registry-name">排油节</span>
+            </button>
+            <button type="button" class="registry-item" data-jump-month="5" data-jump-day="12">
+              <span class="registry-date">05-12</span>
+              <span class="registry-name">屈原的头七</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="date-panel" data-date-panel aria-live="polite">
+          <span class="calendar-kicker">DATE RECORD</span>
+          <h2 data-date-title>请选择日期</h2>
+          <p data-date-text>点击月历中的日期查看登记事项。</p>
+          <div class="date-status" data-date-status>未选中日期</div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>相声宇宙公共信息门户</span><span class="random-quote" data-random-quote><strong>信息载入中</strong><small></small></span></div></footer>
+</body>
+</html>
