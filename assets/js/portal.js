@@ -4,7 +4,8 @@ document.querySelectorAll('.nav-inner a').forEach((link) => {
 
 const quotePool = [
   { text: '人生难得一只鸡', author: '郭德纲' },
-  { text: '不平胸，何以平天下', author: '' }
+  { text: '不平胸，何以平天下', author: '' },
+  { text: '人是铁，你爸爸郭德纲', author: '' }
 ];
 
 document.querySelectorAll('[data-random-quote]').forEach((node) => {
